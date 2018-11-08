@@ -14,3 +14,35 @@
 .rm-navbar-max {
     display: none;
 }
+
+html {
+    background-color: black;
+    overflow-y: scroll;
+
+}
+
+body {
+    margin: 0px auto;
+    padding: 8px;
+    width: 1100px;
+    background-color: #fff;
+    font-family: "Monaco", "Menlo", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 14px;
+}
+
+.right {
+    float: right;
+}
+
+
+.column {
+    border: 1px;
+    width: 33%;
+    float: left;
+}
+
+.site-footer {
+    display: inline;
+    text-align: center;
+
+}
