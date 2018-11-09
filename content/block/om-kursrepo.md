@@ -1,6 +1,6 @@
 #### Kursrepo
 
-Kursen `design`ges på BTH.
+Kursen `design` ges på BTH.
 
 [Kursens hemsida på dbwebb.se](https://dbwebb.se/kurser/design-v2) 
 

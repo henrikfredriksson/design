@@ -18,31 +18,133 @@
 html {
     background-color: black;
     overflow-y: scroll;
-
 }
 
 body {
-    margin: 0px auto;
-    padding: 8px;
-    width: 1100px;
     background-color: #fff;
+    margin: auto auto;
+    float: center;
+    width: 1100px;
+}
+
+.wrap-all {
+    margin: auto auto;
     font-family: "Monaco", "Menlo", "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 14px;
+    width: 1100px;
+}
+
+.inner-wrap-main {
+    
+    min-height: 20cm;
+}
+
+.site-logo {
+    display: none;
+}
+
+.inner-wrap-footer {
+    width: 1100px;
+}
+
+.footer-column {
+    background-color: gray;
+    width: 33%;
+    float: left;
+
+}
+
+
+
+.site-footer {
+    margin-top: 10px;
+    text-align: center;
 }
 
 .right {
     float: right;
 }
 
-
-.column {
-    border: 1px;
-    width: 33%;
+.left {
     float: left;
 }
 
-.site-footer {
+
+
+.byline {
+    padding: 10px;
+    width: 500px;
+    overflow: auto;
+    border: 1px dotted gray;
+    clear: left;
+}
+
+
+.inner-wrap-footer {
+    padding: 10px;
+ 
+}
+
+.site-logo-text {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.region-header li {
     display: inline;
-    text-align: center;
+    margin-left: 2em
+}
+
+.region-header a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.region-header .my-navbar a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.region-header .my-navbar a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.region-header .my-navbar a:visited {
+    color: black;
+}
+
+.region-sidebar-left {
+    width: 250px;
+    float: left;
+}
+
+.has-sidebar-right {
+    padding: 10px;
+    width: 70%;
+    float: left;
+}
+
+.region-main {
+    width: 80%;
 
 }
+.next-previous {
+    width: 80%;
+    padding-bottom: 3em;
+}
+
+.previous {
+    float: left;
+}
+
+article {
+    margin-left: 10px;
+}
+
+.next {
+    float: right;
+}
+
