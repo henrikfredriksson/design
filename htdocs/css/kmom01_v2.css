@@ -1,0 +1,210 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+  display: none;
+}
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+  display: none;
+}
+html {
+  background-color: black;
+  overflow-y: scroll;
+}
+body {
+  background-color: #fff;
+  margin: auto auto;
+  float: center;
+  width: 1100px;
+}
+.wrap-all {
+  margin: auto auto;
+  font-family: "Monaco", "Menlo", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 14px;
+  width: 1100px;
+}
+.inner-wrap-main {
+  min-height: 20cm;
+}
+.site-logo {
+  display: none;
+}
+.inner-wrap-footer {
+  width: 1100px;
+}
+.footer-column {
+  background-color: gray;
+  width: 33%;
+  float: left;
+}
+.site-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.byline {
+  padding: 10px;
+  width: 500px;
+  overflow: auto;
+  border: 1px dotted gray;
+  clear: left;
+}
+.inner-wrap-footer {
+  padding: 10px;
+}
+.site-logo-text {
+  font-size: 30px;
+  text-decoration: none;
+}
+.region-header li {
+  display: inline;
+  margin-left: 2em;
+}
+.region-header a {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+.region-header .my-navbar a {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+.region-header .my-navbar a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+.region-header .my-navbar a:visited {
+  color: black;
+}
+.region-sidebar-left {
+  width: 250px;
+  float: left;
+}
+.has-sidebar-right {
+  padding: 10px;
+  width: 70%;
+  float: left;
+}
+.region-main {
+  width: 80%;
+}
+.next-previous {
+  width: 80%;
+  padding-bottom: 3em;
+}
+.previous {
+  float: left;
+}
+article {
+  margin-left: 10px;
+}
+.next {
+  float: right;
+}
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #424242;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  font: 100.01%/1 serif;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+.inner-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */
