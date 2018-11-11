@@ -581,18 +581,23 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #000;
+  background-color: #333;
 }
 body {
   margin: 0;
   padding: 0;
   color: #333;
   background-color: #fff;
-  font: 100.01%/1 "Garamond", serif;
+  font-family: "Garamond", serif;
   font-size: 14pt;
 }
 img {
   max-width: 100%;
+}
+.site-logo-text a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", serif;
+  font-size: 40px;
+  text-decoration: none;
 }
 /**
 * Layout style for general structure of header, navbar, main, footer
@@ -608,13 +613,38 @@ img {
 /**
  * General layout
  */
-.outer-wrap {
+.outer-wrap-flash,
+.outer-wrap-breadcrumb,
+.outer-wrap-footer,
+.outer-wrap-main {
   background-color: #fff;
+}
+.outer-wrap-flash::after,
+.outer-wrap-breadcrumb::after,
+.outer-wrap-footer::after,
+.outer-wrap-main::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .inner-wrap {
   max-width: 1100px;
-  background-color: #e8e8e8;
+  background-color: #fff;
   margin: 0 auto;
+}
+/*
+ * Header layout
+ */
+.site-logo-text {
+  margin-left: 1em;
+  margin-top: 1em;
+  float: left;
+}
+.logo-1 {
+  position: absolute;
+}
+.site-logo {
+  display: none;
 }
 /* 
  * Main and sidebars layout
@@ -649,12 +679,25 @@ img {
 .region-sidebar-right.has-sidebar-left {
   width: 20%;
 }
-.site-logo {
-  display: none;
+/* 
+ * Sidebar layout
+ */
+.wrap-sidebar h4,
+.toc h4 {
+  width: 90%;
+  background-color: lightgray;
 }
 /*
 *  Footer layout
 */
+.outer-wrap-footer {
+  background-color: #fff;
+}
+.outer-wrap-footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .footer-column {
   width: 33%;
   float: left;
@@ -682,8 +725,17 @@ img {
   font-size: 12pt;
   margin-top: 20px;
 }
+/*
+ * Next previous layout
+ */
+.previous {
+  float: left;
+}
+.next {
+  float: right;
+}
 .outer-wrap-header {
-  background-color: #ccc;
+  background-color: #434;
 }
 .outer-wrap-header::after {
   content: "";
@@ -714,6 +766,9 @@ img {
   display: block;
   clear: both;
 }
+/*
+ * Footer layout
+ */
 .outer-wrap-footer,
 .inner-wrap-footer {
   color: #fff;

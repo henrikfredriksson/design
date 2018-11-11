@@ -1,11 +1,18 @@
 /**
  * Base style to affect HTML elements on a general scale.
  */
-@bgColorHtml: #000;
+@bgColorHtml: #333;
 @bgColorBody: #fff;
 @colorBody: #333;
 @fontFamilyBody: "Garamond", serif;
+@fontFamilySiteLogo: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", serif;
 @fontSize: 14pt;
+
+
+.myFont(@font: @fontFamilyBody; @size: @fontSize) {
+    font-family: @font;
+    font-size: @size;
+}
 
 
     
@@ -19,10 +26,16 @@ body {
     padding: 0;
     color: @colorBody;
     background-color: @bgColorBody;
-    font: 100.01%/1 @fontFamilyBody;
-    font-size: @fontSize;
+    .myFont(@fontFamilyBody, @fontSize);
+
+
 }
 
 img {
     max-width: 100%;
+}
+
+.site-logo-text a {
+    .myFont(@fontFamilySiteLogo; 40px);
+    text-decoration: none;
 }

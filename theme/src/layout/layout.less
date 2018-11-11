@@ -7,14 +7,18 @@
  * Variables
  */
  @bgColorOuterWrap: #fff;
- @bgColorInnerWrap: #e8e8e8;
+ @bgColorInnerWrap: #fff;
  
 /**
  * General layout
  */
 
-.outer-wrap {
+.outer-wrap-flash,
+.outer-wrap-breadcrumb,
+.outer-wrap-footer,
+.outer-wrap-main {
     background-color: @bgColorOuterWrap;
+    .clearfix();
 }
 
 .inner-wrap {
@@ -22,6 +26,24 @@
     background-color: @bgColorInnerWrap;
     margin: 0 auto;
 }
+
+/*
+ * Header layout
+ */
+ .site-logo-text {
+    margin-left: 1em;
+    margin-top: 1em;
+    float: left;
+}
+
+.logo-1 {
+    position: absolute;
+}
+
+.site-logo {
+    display: none;
+}
+
 
 /* 
  * Main and sidebars layout
@@ -56,17 +78,25 @@
     width: 20%;
 }
 
-
-
-.site-logo {
-    display: none;
-}
+/* 
+ * Sidebar layout
+ */
+ .wrap-sidebar h4,
+ .toc h4 {
+    width: 90%;
+    background-color: lightgray;
+ }
 
 
 
 /*
 *  Footer layout
 */
+
+.outer-wrap-footer {
+    background-color: @bgColorOuterWrap;
+    .clearfix();
+}
 
 .footer-column {
     width: 33%;
@@ -102,68 +132,13 @@
     margin-top: 20px;
 }
 
-// .inner-wrap-footer {
-//     padding: 10px;
- 
-// }
+/*
+ * Next previous layout
+ */
+.previous {
+    float: left;
+}
 
-// .site-logo-text {
-//     font-size: 30px;
-//     text-decoration: none;
-// }
-
-// .region-header li {
-//     display: inline;
-//     margin-left: 2em
-// }
-
-// .region-header a {
-//     font-size: 30px;
-//     text-decoration: none;
-//     color: black;
-// }
-
-// .region-header .my-navbar a {
-//     color: black;
-//     font-size: 24px;
-//     text-decoration: none;
-// }
-
-// .region-header .my-navbar a:hover {
-//     color: lightblue;
-//     text-decoration: underline;
-// }
-
-// .region-header .my-navbar a:visited {
-//     color: black;
-// }
-
-// .region-sidebar-left {
-//     width: 250px;
-//     float: left;
-// }
-
-// .has-sidebar-right {
-//     padding: 10px;
-//     width: 70%;
-//     float: left;
-// }
-
-
-// .next-previous {
-//     width: 80%;
-//     padding-bottom: 3em;
-// }
-
-// .previous {
-//     float: left;
-// }
-
-// article {
-//     margin-left: 10px;
-// }
-
-// .next {
-//     float: right;
-// }
-
+.next {
+    float: right;
+}
