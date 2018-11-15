@@ -1,3 +1,6 @@
-#### Footer col 2
+#### Repos
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+
+Redovisningsrepo finns på [Github](https://github.com/henrikfredriksson/design)
+
+Material relaterat till kursen finns på [kursrepot](https://github.com/dbwebb-se/design)

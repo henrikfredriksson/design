@@ -599,6 +599,12 @@ img {
   font-size: 40px;
   text-decoration: none;
 }
+.region-footer a {
+  color: lightblue;
+}
+.region-footer a:visited {
+  color: lightblue;
+}
 /**
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
@@ -646,9 +652,9 @@ img {
 .site-logo {
   display: none;
 }
-/* 
- * Main and sidebars layout
- */
+/*
+* Main and sidebars layout
+*/
 .inner-wrap-main::after {
   content: "";
   display: block;
@@ -679,7 +685,7 @@ img {
 .region-sidebar-right.has-sidebar-left {
   width: 20%;
 }
-/* 
+/*
  * Sidebar layout
  */
 .wrap-sidebar h4,
@@ -700,11 +706,13 @@ img {
 }
 .footer-column {
   width: 33%;
+  height: auto;
   float: left;
 }
 .site-footer {
-  margin-top: 10px;
+  padding-top: 4cm;
   text-align: center;
+  overflow-y: none;
 }
 .right {
   float: right;
@@ -713,7 +721,7 @@ img {
   float: left;
 }
 /*
- * Byline layout 
+ * Byline layout
  */
 .byline {
   padding: 2px;

@@ -1,3 +1,6 @@
-#### Footer col 3
+#### Länkar
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+
+[Karlskrona Handboll F15](http://www.karlskronahandboll.se/Ungdomslag/A-flickor02-03/)
+
+[Styrkelyft Online](http://online.styrkelyft.se/web/userInfo.aspx?userId=5369)
