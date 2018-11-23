@@ -14,7 +14,7 @@ views:
 # Min me-sida i kursen design
 
 
-[FIGURE src="image/me-hefa.jpg?w=350" class="right" caption="Henrik Fredriksson"]
+[FIGURE src="image/me-hefa.jpg" class="right" caption="Henrik Fredriksson"]
 
 Jag heter Henrik Fredriksson och är uppvuxen i Getinge som ligger mellan Halmstad och Falkenberg på västkusten. Efter att ha jobbat 2 år i en elektronikproduktion efter gymnasiet så flyttade jag till Karlshamn 2005 för att studera medieteknik på BTH. Efter några års studier började även att studera matematik. Jag blev klar med grundutbildningen sommaren 2013 och på hösten samma år började jag jobba på matematikinstitutionen på BTH, Karlskrona. Arbetet består i dagsläget mestadels av undervisning i grundläggande kurser i matematik för blivande civil- och högskoleingejörer. Jag forskar även delvis inom tillämpad matematik. Forskningen handlar om att finna matematiska modeller för att strategiskt placera ut mätstationer för att effektivt mäta trafikflöden.
 

@@ -1,0 +1,76 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+@import "../@desinax/typographic-grid/less/typography-font-families.less";
+@import "../@desinax/typographic-grid/less/typography-defaults.less";
+
+@bgColorHtml: #333;
+@bgColorBody: #fff;
+@colorBody: #333;
+
+@fontFamilyHeadings:  @fontFamilyVerdana;
+@fontFamilyBody:      @fontFamilyHelveticaNeue;
+@fontFamilyCode:      @fontFamilyCourier;
+
+@fontFamilyBody: "Garamond", serif;
+// @fontFamilySiteLogo: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", serif;
+//@fontSize: 14pt;
+
+
+// .myFont(@font: @fontFamilyBody; @size: @fontSize) {
+//     font-family: @font;
+//     font-size: @size;
+// }
+
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+
+    //margin-bottom: @magicNumber/6;
+    
+}
+
+
+// Just to make the example more visible
+.meta {
+    position: absolute;
+    top: 0;
+    color: #666;
+}
+
+.magic-number::after {
+    content: "@{magicNumber}";
+}
+
+.base-fontsize::after {
+    content: "@{fontSizeBody}";
+}
+
+html {
+    
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+
+.outer-wrap-footer {
+    min-height: 100%;
+}
+
+#desinax-hgrid.activateDefaultTypography();
+
+.toc h4 {
+    font-size: @fontSizeBody;
+}

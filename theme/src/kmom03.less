@@ -1,0 +1,150 @@
+/*!
+* LESS version of the stylesheet for design kmom03.
+*
+* This stylesheet is for the design course and kmom03. Its intention is to
+* use kmom03.css and lessify the style and use this as a wrapper for the new
+* style.
+*/
+@import "mixin/clearfix.less";
+
+.clearfix() {
+    #design-mixin.clearfix();
+}
+
+@import "normalize.css/normalize.less";
+
+/**
+* Internal self contained modules, save in directory module/.
+*/
+
+@import "module/stylechooser.less";
+
+/**
+* A responsive menu.
+*/
+
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import "base/base_kmom03.less";
+
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+@import "layout/layout_vgrid.less";
+// @import "layout/layout_hgrid.less";
+#desinax-hgrid.activateDefaultTypography();
+
+//@import "layout/layout.less";
+// @import "layout/layout_kmom02.less";
+@import "layout/responsive.less";
+@import "layout/regions.less";
+
+
+
+/**
+* Font Awesome.
+*/
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+* My own settings, not currently in their own module.
+*/
+
+@fontFamilyHeadings: @fontFamilyVerdana;
+@fontFamilyBody:     @fontFamilyHelveticaNeue;
+@fontFamilyCode:     @fontFamilyCourier;
+
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 18px;
+
+.region-footer a,
+.region-footer a:visited {
+    color: lightblue;
+    text-decoration: none
+}
+
+.region-footer code {
+    background-color: #333;
+}
+
+.inner-wrap-flash {
+    background-color: white;
+}
+
+
+.region-flash img {
+    max-width: 100%;
+}
+
+.site-logo-text {
+    font-size: 2em;
+    color: lightblue;
+    font-weight: 300;   
+}
+
+a,
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.toc h4 {
+    font-size: @magicNumber;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+.previous {
+    float: left;
+}
+
+.my-navbar li a {
+    font-weight: 400;
+    text-decoration: none;
+}
+
+// .rm- li a,
+// .rm- li a:visited {
+//     color: #eee;
+//     text-decoration: none;
+// }
+
+.rm-mobile a,
+.rm-mobile a:visited {
+    color: #eee;
+    text-decoration: none;
+}
+
+.rm-show-submenu li a,
+.rm-show-submenu li a:visited {
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+}
+
+.site-logo {
+    display: none;
+}

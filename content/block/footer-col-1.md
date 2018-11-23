@@ -1,3 +1,3 @@
 #### Om
 
-Denna sida är en kursen `design` på Blekinge Tekniska Högskola.
+Denna sida är en del av kursen *design* på Blekinge Tekniska Högskola.

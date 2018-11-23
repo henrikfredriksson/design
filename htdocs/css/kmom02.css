@@ -594,17 +594,6 @@ body {
 img {
   max-width: 100%;
 }
-.site-logo-text a {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", serif;
-  font-size: 40px;
-  text-decoration: none;
-}
-.region-footer a {
-  color: lightblue;
-}
-.region-footer a:visited {
-  color: lightblue;
-}
 /**
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
@@ -636,16 +625,10 @@ img {
 .inner-wrap {
   max-width: 1100px;
   background-color: #fff;
-  margin: 0 auto;
 }
 /*
  * Header layout
  */
-.site-logo-text {
-  margin-left: 1em;
-  margin-top: 1em;
-  float: left;
-}
 .logo-1 {
   position: absolute;
 }
@@ -710,25 +693,12 @@ img {
   float: left;
 }
 .site-footer {
-  padding-top: 4cm;
   text-align: center;
   overflow-y: none;
-}
-.right {
-  float: right;
-}
-.left {
-  float: left;
 }
 /*
  * Byline layout
  */
-.byline {
-  padding: 2px;
-  width: 500px;
-  overflow: auto;
-  border: 1px dotted gray;
-}
 .byline-text {
   font-size: 12pt;
   margin-top: 20px;
@@ -741,6 +711,12 @@ img {
 }
 .next {
   float: right;
+}
+.rm-default ul li {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  display: block;
+  text-align: left;
 }
 .outer-wrap-header {
   background-color: #434;

@@ -25,7 +25,7 @@ views:
 ---
 # Om
 
-Denna sida är skapad för kursmomentent `kmom01` i kursen  `design` på BTH.
+Denna sida är skapad för kursmomentent `kmom0X` i kursen  `design` på BTH.
 
 Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
 
