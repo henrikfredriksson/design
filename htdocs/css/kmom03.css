@@ -616,7 +616,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      */
 }
 body {
-  font: 18px/1.33333333 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 18px/1.33333333 Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
 }
 .meta {
   position: absolute;
@@ -628,15 +628,6 @@ body {
 }
 .base-fontsize::after {
   content: "18px";
-}
-.wrap {
-  margin: 0 auto;
-}
-.right {
-  float: right;
-}
-.left {
-  float: left;
 }
 .outer-wrap-footer {
   min-height: 100%;
@@ -975,7 +966,7 @@ hr::after {
   width: 101.04166667%;
   margin-left: -0.52083333%;
   margin-right: -0.52083333%;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 }
 .row::after {
   content: "";
@@ -987,12 +978,19 @@ hr::after {
 }
 .inner-wrap-header {
   background-color: #fff;
+  margin-bottom: 24px;
 }
-.region-header-col-1,
+.region-header-col-1 {
+  display: inline;
+  float: left;
+  width: 13.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
 .region-header-col-3 {
   display: inline;
   float: left;
-  width: 11.45833333%;
+  width: 8.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
 }
@@ -1197,6 +1195,48 @@ hr::after {
 .toc h4 {
   font-size: 1.5em;
   background-color: lightgray;
+}
+/*
+* Left and right
+*/
+.next-previous {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.previous {
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: -103.64583333%;
+}
+.next {
+  display: inline;
+  float: left;
+  width: 23.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: 75.52083333%;
+}
+main p {
+  display: inline;
+  float: left;
+  width: 98.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+}
+.me {
+  width: calc(24/3);
+  display: inline;
+  float: left;
+  width: 48.95833333%;
+  margin-left: 0.52083333%;
+  margin-right: 0.52083333%;
+  margin-left: -3.64583333%;
 }
 /*
 *  Footer layout
@@ -5639,18 +5679,6 @@ a:visited {
 }
 .toc h4 {
   font-size: 24px;
-}
-.right {
-  float: right;
-}
-.left {
-  float: left;
-}
-.next {
-  float: right;
-}
-.previous {
-  float: left;
 }
 .my-navbar li a {
   font-weight: 400;

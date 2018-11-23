@@ -20,13 +20,11 @@
  * General layout
  */
 
-
-
 .row {
     #desinax-vgrid.row();
 
     //background-color: #0f0;
-    margin-bottom: 12px;
+    margin-bottom: @magicNumber;
 }
 
 // Header layout
@@ -36,11 +34,15 @@
 
 .inner-wrap-header {
     background-color: @regionHeaderColor;
+    margin-bottom: @magicNumber;
 }
 
-.region-header-col-1,
+.region-header-col-1 {
+    #desinax-vgrid.column(@columns * 3/20);
+}
+
 .region-header-col-3 {
-    #desinax-vgrid.column(@columns * 1/8);
+    #desinax-vgrid.column(@columns * 1/10);
 }
 
 .region-header-col-2 {
@@ -216,6 +218,45 @@
     // width: 90%;
     font-size: @fontSizeH4;
     background-color: lightgray;
+}
+
+
+/*
+* Left and right
+*/
+
+.next-previous {
+    #desinax-vgrid.column(@columns);
+}
+
+.previous {
+    #desinax-vgrid.column(6);
+    #desinax-vgrid.pull(@columns + 1);
+}
+
+.next {
+    #desinax-vgrid.column(6);
+    #desinax-vgrid.push(@columns - 6);
+}
+
+// figure {
+//     #desinax-vgrid.column(5);
+
+//     &.right {
+//         #desinax-vgrid.push(13);
+//     }
+// }
+
+main {
+    p {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+.me {
+    width: calc(@columns/3);
+    #desinax-vgrid.column(@columns / 2);
+    #desinax-vgrid.pull(1);
 }
 
 /*
