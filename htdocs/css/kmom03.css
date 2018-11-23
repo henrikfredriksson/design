@@ -577,6 +577,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 * Base style to affect HTML elements on a general scale.
 */
 /**
+* Typographical grid
+*/
+/**
  * Base style to affect HTML elements on a general scale.
  */
 /**
@@ -1231,9 +1234,6 @@ hr::after {
 .byline-text {
   font-size: 12pt;
 }
-/*
- * Next previous layout
- */
 .rm-default ul li {
   background-color: rgba(255, 255, 255, 0.8);
   border: 0;
@@ -5630,7 +5630,7 @@ hr::after {
 .site-logo-text {
   font-size: 2em;
   color: lightblue;
-  font-weight: 300;
+  font-weight: bold;
 }
 a,
 a:visited {

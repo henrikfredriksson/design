@@ -29,6 +29,11 @@
 /**
 * Base style to affect HTML elements on a general scale.
 */
+
+
+/**
+* Typographical grid
+*/
 @import "base/base_kmom03.less";
 
 .hgrid .inner-wrap {
@@ -42,11 +47,12 @@
 * and other regions of the page including route specific styles.
 */
 @import "layout/layout_vgrid.less";
-// @import "layout/layout_hgrid.less";
+
+
+
 #desinax-hgrid.activateDefaultTypography();
 
-//@import "layout/layout.less";
-// @import "layout/layout_kmom02.less";
+
 @import "layout/responsive.less";
 @import "layout/regions.less";
 
@@ -73,7 +79,7 @@
 .region-footer a,
 .region-footer a:visited {
     color: lightblue;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .region-footer code {
@@ -92,7 +98,7 @@
 .site-logo-text {
     font-size: 2em;
     color: lightblue;
-    font-weight: 300;   
+    font-weight: bold;
 }
 
 a,
