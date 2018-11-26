@@ -629,9 +629,6 @@ img {
 /*
  * Header layout
  */
-.logo-1 {
-  position: absolute;
-}
 .site-logo {
   display: none;
 }
@@ -699,6 +696,12 @@ img {
 /*
  * Byline layout
  */
+.byline {
+  padding: 2px;
+  width: 500px;
+  overflow: auto;
+  border: 1px dotted gray;
+}
 .byline-text {
   font-size: 12pt;
   margin-top: 20px;
@@ -713,9 +716,9 @@ img {
   float: right;
 }
 .rm-default ul li {
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
   background-color: rgba(255, 255, 255, 0.8);
   border: 0;
-  display: block;
   text-align: left;
 }
 .outer-wrap-header {

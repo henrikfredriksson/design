@@ -14,18 +14,27 @@
 @fontFamilyCode:      @fontFamilyCourier;
 
 
+@magicNumber:  24px;  // 22px
+@fontSizeBody: 18px;
+
 // Activate the grid base font
-body {
+.hgrid .inner-wrap {
     #desinax-hgrid.font(@fontSizeBody);
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
 }
+
+
+#desinax-hgrid.activateDefaultTypography();
+
 
 
 // Just to make the example more visible
-.meta {
-    position: absolute;
-    top: 0;
-    color: #666;
-}
+// .meta {
+//     position: absolute;
+//     top: 0;
+//     color: #666;
+// }
 
 .magic-number::after {
     content: "@{magicNumber}";
@@ -36,29 +45,16 @@ body {
 }
 
 
-
-// html {
-// }
-
-// .wrap {
-//     margin: 0 auto;
-// }
-
-// .right {
-//     float: right;
-// }
-
-// .left {
-//     float: left;
-// }
-
-
-.outer-wrap-footer {
-    min-height: 100%;
+.rm-default a {
+    //font-size: @fontFamilyBody;
+    font-size: @fontSizeH5;
+    background-color: #fff;
+    display: inline;
 }
 
-#desinax-hgrid.activateDefaultTypography();
-
-.toc h4 {
-    font-size: @fontSizeBody;
-}
+// .my-navbar ul li {
+//     //box-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+//     font-size: @fontSizeH1;
+//     //background-color: rgba(255, 255, 255, 0.8);
+//     text-align: left;
+// }

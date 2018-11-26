@@ -36,23 +36,11 @@
 */
 @import "base/base_kmom03.less";
 
-.hgrid .inner-wrap {
-    @gridImage: "../img/magic-number-@{magicNumber}.png";
-    #desinax-hgrid.showGrid(@gridImage);
-}
-
-
 /**
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
 */
 @import "layout/layout_vgrid.less";
-
-
-
-#desinax-hgrid.activateDefaultTypography();
-
-
 @import "layout/responsive.less";
 @import "layout/regions.less";
 
@@ -71,8 +59,7 @@
 * My own settings, not currently in their own module.
 */
 
-@magicNumber:  24px;  // 22px
-@fontSizeBody: 18px;
+
 
 .region-footer a,
 .region-footer a:visited {
@@ -94,7 +81,8 @@
 }
 
 .site-logo-text {
-    font-size: 2em;
+    display: inline;
+    font-size: @fontSizeBody;
     color: lightblue;
     font-weight: bold;
 }
@@ -106,14 +94,8 @@ a:visited {
 }
 
 .toc h4 {
-    font-size: @magicNumber;
+    font-size: @fontSizeBody;
 }
-
-.my-navbar li a {
-    font-weight: 400;
-    text-decoration: none;
-}
-
 
 .rm-mobile a,
 .rm-mobile a:visited {
@@ -128,6 +110,19 @@ a:visited {
     text-decoration: none;
 }
 
-.site-logo {
-    display: none;
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+.breadbrumb-list ul,
+.toc ul {
+    display: inline-block;
+}
+
+.block h4 {
+    font-size: @fontSizeBody;
+}
+
+.site-logo-text {
+    font-size: @fontSizeH1;
 }
