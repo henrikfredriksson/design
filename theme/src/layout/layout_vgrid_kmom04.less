@@ -11,9 +11,7 @@
 
 @import "../@desinax/vertical-grid/less/grid.less";
 
-@bgColorOuterWrap: #fff;
-@bgColorInnerWrap: #fff;
-@regionHeaderColor: #fff;
+
 
 
 /**
@@ -100,24 +98,25 @@
 // }
 
 .region-main {
-    #desinax-vgrid.column(@columns * 3/4);
-    #desinax-vgrid.push(@columns * 1/8);
+    #desinax-vgrid.column(@columns) ;
+    //k#desinax-vgrid.push(@columns);
 
     &.has-sidebar {
+        #desinax-vgrid.column(@columns * 4/6);
         #desinax-vgrid.push(0);
     }
 
     &.has-sidebar-right {
-        #desinax-vgrid.column(@columns * 3/4 - 1);
+        #desinax-vgrid.column(@columns * 4/6 - 1);
     }
 
     &.has-sidebar-left {
-        #desinax-vgrid.column(@columns * 3/4 - 1);
+        #desinax-vgrid.column(@columns * 4/6 - 1);
         #desinax-vgrid.push(1);
     }
 
     &.has-sidebar-left.has-sidebar-right {
-        #desinax-vgrid.column(@columns * 4/6 - 2);
+        #desinax-vgrid.column(@columns * 14/24 - 2);
         #desinax-vgrid.push(1);
     }
 
@@ -187,9 +186,6 @@
     }
 }
 
-
-
-
 body {
     #desinax-hgrid.font(@fontSizeBody);
 }
@@ -230,9 +226,9 @@ body {
 *  Footer layout
 */
 
-.outer-wrap-footer {
-    background-color: @bgColorOuterWrap;
-}
+// .outer-wrap-footer {
+//     background-color: @bgColorOuterWrap;
+// }
 
 .footer-column {
     #desinax-vgrid.column(@columns / 3);

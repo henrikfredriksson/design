@@ -1,5 +1,5 @@
 /*!
-* LESS version of the stylesheet for design kmom03.
+* LESS version of the stylesheet for design kmom04.
 *
 * This stylesheet is for the design course and kmom03. Its intention is to
 * use kmom03.css and lessify the style and use this as a wrapper for the new
@@ -40,7 +40,7 @@
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
 */
-@import "layout/layout_vgrid.less";
+@import "layout/layout_vgrid_kmom04.less";
 @import "layout/responsive.less";
 @import "layout/regions.less";
 
@@ -59,76 +59,3 @@
 * My own settings, not currently in their own module.
 */
 
-
-
-.region-footer a,
-.region-footer a:visited {
-    color: lightblue;
-    text-decoration: none;
-}
-
-.region-footer code {
-    background-color: #333;
-}
-
-.inner-wrap-flash {
-    background-color: white;
-}
-
-
-.region-flash img {
-    max-width: 100%;
-}
-
-.site-logo-text {
-    display: inline;
-    font-size: @fontSizeBody;
-    color: lightblue;
-    font-weight: bold;
-}
-
-a,
-a:visited {
-    color: blue;
-    text-decoration: none;
-}
-
-.toc h4 {
-    font-size: @fontSizeBody;
-}
-
-.rm-mobile a,
-.rm-mobile a:visited {
-    color: #eee;
-    text-decoration: none;
-}
-
-.rm-show-submenu li a,
-.rm-show-submenu li a:visited {
-    background-color: #eee;
-    color: #333;
-    text-decoration: none;
-}
-
-body {
-    #desinax-hgrid.font(@fontSizeBody);
-}
-
-.breadbrumb-list ul,
-.toc ul {
-    display: inline-block;
-}
-
-.block h4 {
-    font-size: @fontSizeBody;
-}
-
-.site-logo-text {
-    font-size: @fontSizeH1;
-}
-
-.rm-desktop ul {
-    border: #e3e3e3 1px solid;
-    color: #e3e3e3;
-    background: black;
-}
