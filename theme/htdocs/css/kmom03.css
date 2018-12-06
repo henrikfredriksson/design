@@ -616,7 +616,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      */
 }
 .hgrid .inner-wrap {
-  font: 18px/1.33333333 Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  font: 18px/1.33333333 "sans-serif";
   background-image: url("../img/magic-number-24px.png");
 }
 h1,
@@ -625,7 +625,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: "serif";
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -909,11 +909,6 @@ hr::after {
 .base-fontsize::after {
   content: "18px";
 }
-.rm-default a {
-  font-size: 1.25em;
-  background-color: #fff;
-  display: inline;
-}
 /**
 * Layout style for general structure of header, navbar, main, footer
 * and other regions of the page including route specific styles.
@@ -965,12 +960,6 @@ hr::after {
   display: block;
   clear: both;
 }
-.outer-wrap-header {
-  background-color: #434;
-}
-.inner-wrap-header {
-  background-color: #fff;
-}
 .region-header-col-1 {
   display: inline;
   float: left;
@@ -993,17 +982,10 @@ hr::after {
   margin-right: 0.52083333%;
   text-align: center;
 }
-.outer-wrap-flash,
-.outer-wrap-breadcrumb,
-.outer-wrap-footer,
-.outer-wrap-main {
-  background-color: #fff;
-}
 .inner-wrap {
   margin-right: auto;
   margin-left: auto;
   max-width: 1100px;
-  background-color: #fff;
 }
 .inner-wrap-header {
   margin-right: auto;
@@ -1179,14 +1161,12 @@ hr::after {
     margin-right: 0.52083333%;
   }
 }
+body {
+  font: 18px/1.33333333 "sans-serif";
+}
 /*
  * Sidebar layout
  */
-.wrap-sidebar h4,
-.toc h4 {
-  font-size: 1.5em;
-  background-color: lightgray;
-}
 /*
 * Left and right
 */
@@ -1257,11 +1237,6 @@ hr::after {
 /*
  * Footer layout
  */
-.outer-wrap-footer,
-.inner-wrap-footer {
-  color: #fff;
-  background-color: #333;
-}
 .columns {
   display: inline;
   float: left;
@@ -5385,7 +5360,7 @@ a:visited {
   text-decoration: none;
 }
 body {
-  font: 18px/1.33333333 Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", Georgia, "Times New Roman", Times, serif;
+  font: 18px/1.33333333 "sans-serif";
 }
 .breadbrumb-list ul,
 .toc ul {
@@ -5396,4 +5371,9 @@ body {
 }
 .site-logo-text {
   font-size: 2.375em;
+}
+.rm-desktop ul {
+  border: #e3e3e3 1px solid;
+  color: #e3e3e3;
+  background: black;
 }
