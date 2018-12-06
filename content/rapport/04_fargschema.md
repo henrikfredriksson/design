@@ -111,7 +111,12 @@ Halmstad Grafisk manual, 2013).
 
 Typsnittet som används på sidan är Guardian Egyptian Web Light för rubriker och
 Arial för all övrig text. Båda typsnitten är serif och förekommer oftast på en
-vit bakgrund. Rubriker är skrivna i versaler. Ingen accentfärg används på
+vit bakgrund. Arial är ett typsnitt som är webbsäkert, men har begränsad
+variation och gör att webbsidans text inte sticker ut. Av de analyserade sidorna
+har så upplevs BTH har mer luft mellan enskilda tecken vilket ökar läsbarheten
+något.
+
+Rubriker är skrivna i versaler. Ingen accentfärg används på
 startsidan. Accentfärger används dock när man läser om de olika ämnesområden och
 deras undersidor. Varje ämnesområde har en egen färg som tydligt framkommer när
 man läser om dem.
@@ -119,7 +124,7 @@ man läser om dem.
 ### Linnéuniversitet [(www.lnu.se)](www.lnu.se)
 
 Linnéuniversitet är grundat 2010 är därmed ett ett yngre lärosäte än både BTH och
-HH. Just ungdomligheten lyser i igenom när man ser färgvalet
+HH. Just "ungdomligheten" lyser i igenom när man ser färgvalet
 på webbsidan.
 
 [FIGURE src="image/lnu_thumb.png?w=600" caption="Framsida av lnu.se"]
@@ -139,13 +144,13 @@ linje med LNU's slogan: *Ett universitet där allt är möjligt! Linnéuniversit
 </tr>
 </table>
 
-<table style="border-spacing: 4px; border-collapse: separate">
+<!-- <table style="border-spacing: 4px; border-collapse: separate">
 <tr>
 <td style="height: 50px; width: 50px; background-color: #000000">
 <td style="height: 50px; width: 50px; background-color: #ffffff">
 <td style="height: 50px; width: 50px; background-color: #333333">
 </tr>
-</table>
+</table> -->
 
 Gult kan ibland upplevas som att den tar över och man lägger verkligen märke
 till den när man besöker sidan, utan för den sakens skull ta över.
