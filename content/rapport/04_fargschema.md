@@ -43,7 +43,7 @@ Som besökare så har en MacBook Pro 2013 med retina skärm använts.
 
 ## Resultat
 
-### Blekinge Tekniska högskola [(www.bth.se)](www.bth.se)
+### Blekinge Tekniska högskola [(www.bth.se)](https://www.bth.se)
 
 Det första man lägger märke till är de i färgväg är de blå färger är på
 startsidan. De blå färgerna används i ett mosaikaktigt sätt med olika nyans som
@@ -84,7 +84,7 @@ brödtexten är nästintill svart och vilar på en vit eller grå bakgrund (#F5F
 Bakgrundsfärgen förekommer växelvis och betonar därmed styckesindelning på ett
 tydligt sätt.
 
-### Högskolan i Halmstad [(www.hh.se)](www.hh.se)
+### Högskolan i Halmstad [(www.hh.se)](https://www.hh.se)
 
 HH har inte lika tydlig profilering mot något ämnesområde som BTH, men även här
 används den blå färgen som primär färg. Lärosätets slogan är *Högskolan i
@@ -121,7 +121,7 @@ startsidan. Accentfärger används dock när man läser om de olika ämnesområd
 deras undersidor. Varje ämnesområde har en egen färg som tydligt framkommer när
 man läser om dem.
 
-### Linnéuniversitet [(www.lnu.se)](www.lnu.se)
+### Linnéuniversitet [(www.lnu.se)](https://www.lnu.se)
 
 Linnéuniversitet är grundat 2010 är därmed ett ett yngre lärosäte än både BTH och
 HH. Just "ungdomligheten" lyser i igenom när man ser färgvalet

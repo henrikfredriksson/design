@@ -11,13 +11,13 @@ views:
                 type: single
                 route: block/byline
 
-    me:
-        region: sidebar-right
-        template: anax/v2/block/default
-        data:
-            meta: 
-                type: single
-                route: block/me
+    # me:
+    #     region: sidebar-right
+    #     template: anax/v2/block/default
+    #     data:
+    #         meta: 
+    #             type: single
+    #             route: block/me
 
 
 ---
@@ -31,8 +31,11 @@ studera medieteknik på BTH. Efter några års studier började även att studer
 matematik. Jag blev klar med grundutbildningen sommaren 2013 och på hösten samma
 år började jag jobba på matematikinstitutionen på BTH, Karlskrona. Arbetet
 består i dagsläget mestadels av undervisning i grundläggande kurser i matematik
-för blivande civil- och högskoleingejörer. Jag forskar även delvis inom
-tillämpad matematik. Forskningen handlar om att finna matematiska modeller för
+för blivande civil- och högskoleingejörer. 
+
+[FIGURE src="image/me-hefa.jpg&h=400" class="right" caption="Henrik Fredriksson"]
+
+Jag forskar även delvis inom tillämpad matematik. Forskningen handlar om att finna matematiska modeller för
 att strategiskt placera ut mätstationer för att effektivt mäta trafikflöden.
 
 Nu har dock intresset att börja studera börjat vakna igen och har därför börjar
