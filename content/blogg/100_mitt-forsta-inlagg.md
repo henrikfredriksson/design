@@ -39,8 +39,7 @@ Jag ser verkligen fram emot den nya arenan. Vi har de två senaste säsongerna b
 
 [FIGURE src="image/arena.jpeg&width=600&height=400&crop-to-fit&f=pixelate,8,10" caption="Karlskronas nya arena är på gång." class="center"]
 
-
-Bilderna är tagna med en iPhone 7 med 12MP upplösning.
+Bilderna är tagna med en iPhone 7 med 12MP upplösning som en del av kursmomenten kmom05 i kursen design.
 
 Rubrik 2 {#anchor-hit}
 -----------------------------------

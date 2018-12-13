@@ -128,7 +128,7 @@ rankas som långamma.
 PageSpeed Insights mätningar om laddningstid är ett mått på hur snabb en sida
 är. Ett annat sätt att se på det är hur man som användare upplever
 användbarheten hos sidan, d.v.s är sidan interaktiv, kan börja navigera runt, klicka
-på länkar direkt när man besöker sidan. Man 
+på länkar direkt när man besöker sidan.
 
 Ur denna aspekt så är ett tak på 2 sekunders
 laddningstid acceptabelt ur mitt perspektiv. 

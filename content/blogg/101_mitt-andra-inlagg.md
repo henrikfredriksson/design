@@ -25,9 +25,7 @@ Att hitta en lägenhet i Karlskrona på kort varsel är inte lätt, men i novemb
 
 För den som är intresserad, så kan man läsa mer om Karlskrona Marinmuseums på deras hemsida som man finner [här](https://www.marinmuseum.se/)
 
-
-
-Bilderna är tagna med en iPhone 7 med 12MP upplösning.
+Bilderna är tagna med en iPhone 7 med 12MP upplösning som en del av kursmomenten kmom05 i kursen design.
 
 Rubrik 2 {#anchor-hit}
 -----------------------------------

@@ -5610,7 +5610,7 @@ figure.figure-codepen {
   }
   .left.w25 img,
   .right.w25 img {
-    width: 8;
+    width: 6;
   }
   .left.w67,
   .right.w67 {
@@ -5621,16 +5621,6 @@ figure.figure-codepen {
   .left.w67 img,
   .right.w67 img {
     width: 16;
-  }
-  .left.full,
-  .right.full {
-    margin-left: 0;
-    margin-right: 0;
-    float: none;
-  }
-  .left.full img,
-  .right.full img {
-    width: 24;
   }
 }
 .region-header,
