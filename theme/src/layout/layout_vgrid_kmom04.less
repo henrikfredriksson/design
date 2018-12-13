@@ -11,9 +11,6 @@
 
 @import "../@desinax/vertical-grid/less/grid.less";
 
-
-
-
 /**
  * General layout
  */
@@ -72,15 +69,6 @@
     margin-bottom: @magicNumber;
 }
 
-
-
-/*
- * Header layout
- */
-
-
-
-
 // .logo-1 {
 //     position: absolute;
 // }
@@ -98,7 +86,8 @@
 // }
 
 .region-main {
-    #desinax-vgrid.column(@columns) ;
+    #desinax-vgrid.column(@columns * 20/24) ;
+    #desinax-vgrid.push(2);
     //k#desinax-vgrid.push(@columns);
 
     &.has-sidebar {

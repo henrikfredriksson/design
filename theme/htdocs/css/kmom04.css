@@ -593,8 +593,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      * Mixins used when setting default fonts
      */
   /**
-     * Settings for headings H1-H6
-     */
+    *
+    * Settings for headings H1-H6
+    */
   /**
      * Text elements
      */
@@ -612,8 +613,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      * More typography elements
      */
   /**
-     * Enable all default typographic elements.
-     */
+    * Enable all default typographic elements.
+    */
 }
 .hgrid .inner-wrap {
   font: 18px/1.33333333 "sans-serif";
@@ -1025,9 +1026,6 @@ hr::after {
   margin-right: 0.52083333%;
   margin-bottom: 24px;
 }
-/*
- * Header layout
- */
 .site-logo {
   display: none;
 }
@@ -1037,9 +1035,10 @@ hr::after {
 .region-main {
   display: inline;
   float: left;
-  width: 98.95833333%;
+  width: 82.29166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  margin-left: 8.85416667%;
   margin-bottom: 24px;
 }
 .region-main.has-sidebar {
@@ -5320,3 +5319,12 @@ body {
 /**
 * My own settings, not currently in their own module.
 */
+h2 {
+  font-size: 1.875em;
+}
+h3 {
+  font-size: 1.75em;
+}
+h3 {
+  font-size: 1.5em;
+}

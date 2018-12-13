@@ -593,8 +593,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      * Mixins used when setting default fonts
      */
   /**
-     * Settings for headings H1-H6
-     */
+    *
+    * Settings for headings H1-H6
+    */
   /**
      * Text elements
      */
@@ -612,8 +613,8 @@ a.rm-button.rm-clicked .rm-button-face-2 {
      * More typography elements
      */
   /**
-     * Enable all default typographic elements.
-     */
+    * Enable all default typographic elements.
+    */
 }
 .hgrid .inner-wrap {
   font: 18px/1.33333333 "sans-serif";
