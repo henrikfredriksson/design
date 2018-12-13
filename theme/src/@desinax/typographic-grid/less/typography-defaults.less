@@ -34,14 +34,14 @@
 
 // fontsize code blocks
 //@fontSizeCodeInline:  1.25em;
-@fontSizeCodeBlock:   1.0em;
+@fontSizeCodeBlock: 1em;
 @lineHeightCodeBlock: 1.5;
 
- // fontsize super and subscripts
- @fontSizeSupSub: 0.75em;
+// fontsize super and subscripts
+@fontSizeSupSub: 0.75em;
 
- // fontsize smaller
- @fontSizeSmall: 0.875em;
+// fontsize smaller
+@fontSizeSmall: 0.875em;
 
 @colorTypographyMark: #000;
 @bgColorTypographyMark:  #ff9;
@@ -68,7 +68,6 @@
 
 
 #desinax-hgrid {
-
     /**
      * Mixins used when setting default fonts
      */
@@ -83,16 +82,14 @@
     .fontSize(@fontSize) {
         font-size: @fontSize;
         @lineHeightBase: unit((@magicNumber / @fontSizeBody));
-        line-height: @lineHeightBase / unit(@fontSize) * ceil(unit(@fontSize) / @lineHeightBase );
+
+        line-height: @lineHeightBase / unit(@fontSize) * ceil(unit(@fontSize) / @lineHeightBase);
     }
 
-    // 5/4 for smaller font-size, incremental leading.
-
-
-
     /**
-     * Settings for headings H1-H6
-     */
+    *
+    * Settings for headings H1-H6
+    */
     .typographyHeadings() {
         h1,
         h2,
@@ -115,6 +112,7 @@
             font-weight: normal;
             border-bottom: @borderSizeH1 solid @colorH1BorderBottom;
             margin-bottom: @magicNumber - @borderSizeH1;
+
 
             // If header below h1, then assume larger margin top
             & ~ h1,
@@ -474,14 +472,14 @@
 
 
     /**
-     * Enable all default typographic elements.
-     */
-     .activateDefaultTypography() {
-         #desinax-hgrid.typographyHeadings();
-         #desinax-hgrid.typographyTextElements();
-         #desinax-hgrid.typographyCodeElements();
-         #desinax-hgrid.typographyListElements();
-         #desinax-hgrid.typographyTableElements();
-         #desinax-hgrid.typographyOtherElements();
-     }
+    * Enable all default typographic elements.
+    */
+    .activateDefaultTypography() {
+        #desinax-hgrid.typographyHeadings();
+        #desinax-hgrid.typographyTextElements();
+        #desinax-hgrid.typographyCodeElements();
+        #desinax-hgrid.typographyListElements();
+        #desinax-hgrid.typographyTableElements();
+        #desinax-hgrid.typographyOtherElements();
+    }
 }
