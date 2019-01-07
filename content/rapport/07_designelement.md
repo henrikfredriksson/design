@@ -14,11 +14,11 @@ Följande designelement har implementats i temat.
 ## Färger
 I temat så har det implementerats ett triadiskt färgschema med följande primärfärger:
 
-<table style="border-spacing: 4px; border-collapse: separate">
+<table style="border-spacing: 4px; border-collapse: separate;">
 <tr>
-<td style="height: 50px; width: 50px; background-color: #00A3C1">
-<td style="height: 50px; width: 50px; background-color: #C5007C">
-<td style="height: 50px; width: 50px; background-color: #FFC601">
+<td style="height: 50px; width: 50px; background-color: #00a3c1;">
+<td style="height: 50px; width: 50px; background-color: #c5007c;">
+<td style="height: 50px; width: 50px; background-color: #ffc601;">
 </tr>
 </table>
 
@@ -46,6 +46,3 @@ bild dold för att låta bakgrundbilden få en mer framträdande roll.
 ## Referenser
 
 [Canva](https://www.canva.com/learn/design-elements-principles/)
-
-
-
