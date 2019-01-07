@@ -1,0 +1,326 @@
+/*!
+* LESS version of the stylesheet for design kmom06.
+*
+* This stylesheet is for the design course and kmom03. Its intention is to
+* use kmom0.css and lessify the style and use this as a wrapper for the new
+* style.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import "kmom04.less";
+@import "./@desinax/typographic-grid/less/typography-font-families.less";
+@import "./@desinax/typographic-grid/less/typography-defaults.less";
+
+
+// #00A3C1
+// #C5007C
+// #FFC601
+
+@bgColorBody: #00A3C1;
+@bgColorHTML: #C5007C;
+@colorBody: #859597;
+@navbarLink: #B58901;
+@hColor: #C5007C;
+@link: #B58901;
+
+
+@fontLogo:            "Barrio", @fontFamilyHelveticaNeue;
+@fontFamilyHeadings:  "Shadows Into Light", @fontFamilyHelveticaNeue;
+@fontFamilyBody:      @fontFamilyHelveticaNeue;
+@fontFamilyCode:      @fontFamilyCourier;
+
+h2 {
+    font-size: @fontSizeH2;
+}
+
+h3 {
+    font-size: @fontSizeH3;
+}
+
+
+.outer-wrap-main {
+    background-color: #e3e3e3;
+}
+
+.outer-wrap-main {
+    background-image: url("../img/main-background.jpg");
+    background-size: initial;
+}
+
+.inner-wrap-main {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+
+// .me {
+//     width: 100%;
+// }
+
+html {
+    background-image: linear-gradient(to right, @bgColorBody, rgb(97, 157, 192));
+}
+
+@media screen and (max-width: 1100px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+
+        padding: 1em;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    .region-sidebar-right,
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-right.has-sidebar-left,
+    .region-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-flash {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+
+// .wrap-all {
+//     background-color: @bgColorBody;
+// }
+
+// .inner-wrap-header .row {
+//     background-color: @bgColorBody;
+//     background-image: linear-gradien(@bgColorBody, black);
+// }
+
+
+
+// .outer-wrap-main {
+//     background-color: @bgColorBody;
+//     color: @colorBody;
+// }
+
+.rm-default li a {
+    font-size: @fontSizeH5;
+    color: @navbarLink;
+    display: inline;
+    text-shadow: 2px 2px 5px black;
+}
+
+.region-flash img {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: @hColor;
+}
+
+
+
+h1 {
+    font-size: @fontSizeH1;
+}
+
+h2 {
+    font-size: @fontSizeH2;
+}
+
+h3 {
+    font-size: @fontSizeH3;
+}
+
+h3 {
+    font-size: @fontSizeH4;
+}
+
+.rm-default li a:hover {
+    //font-size: @fontFamilyBody;
+    font-size: @fontSizeH5;
+    color: @link;
+}
+
+a,
+a:visited {
+    color: @link;
+    text-decoration: none;
+}
+
+
+.region-footer {
+    color: @colorBody;
+}
+
+.region-footer a,
+.region-footer a:visited {
+    color: @link;
+    text-decoration: none;
+}
+
+.region-footer code {
+    background-color: #333;
+}
+
+.inner-wrap-flash {
+    background-color: @bgColorBody;
+}
+
+
+.region-flash img {
+    max-width: 100%;
+}
+
+.site-logo-text {
+    display: inline;
+    font-size: @fontSizeBody;
+    font-family: @fontLogo;
+    color: lightblue;
+    font-weight: bold;
+}
+
+
+
+.h4 {
+    background-color: @navbarLink;
+    font-size: @fontSizeBody;
+    color: #a97721;
+}
+
+.rm-mobile a,
+.rm-mobile a:visited {
+    color: #eee;
+    text-decoration: none;
+}
+
+.rm-show-submenu li a,
+.rm-show-submenu li a:visited {
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+}
+
+
+// .breadbrumb-list ul,
+// .toc ul {
+//     display: inline-block;
+// }
+
+.inner-wrap-main .block {
+    background-color: white;
+    font-size: @fontSizeBody;
+    box-shadow: 10px 10px;
+}
+
+.site-logo-text {
+    font-size: @fontSizeH1;
+}
+
+// .rm-desktop ul {
+//     border: #e3e3e3 1px solid;
+//     color: #e3e3e3;
+//     background: black;
+// }
+
+@import "./@desinax/figure/less/asciinema.less";
+@import "./@desinax/figure/less/codepen.less";
+@import "./@desinax/figure/less/figure.less";
+
+figure.figure {
+    @maxContentWidth: 960px;
+
+    #desinax-figure.figure(@maxContentWidth);
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+
+
+&.left,
+&.right {
+    @media screen {
+        @media (max-width: round(@columns * 2 / 3)) {
+            &.w50 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+
+                img {
+                    width: @columns * 1 / 2;
+                }
+            }
+
+            &.w25 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+
+                img {
+                    width: @columns * 1 / 4;
+                }
+            }
+
+            &.w67 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+
+                img {
+                    width: @columns * 2/3;
+                }
+            }
+        }
+    }
+}
+
+
+.region-header,
+.region-flash,
+.inner-wrap-header .row,
+.inner-wrap-flash .row {
+    margin: 0;
+    width: 100%;
+}
+
+
+.rm-default li ul {
+    background-color: @bgColorBody;
+}
+
+.my-navbar li a {
+    font-family: "Shadows Into Light";
+    font-size: 30px;
+}
+
+.my-navbar li a:hover {
+    font-family: "Shadows Into Light";
+    font-size: 30px;
+}
+
+// .footer-column {
+//     background-color: rgba(@bgColorBody, 0.6);
+// }
+
+
+.site-footer p,
+.footer-column p {
+    color: black;
+}

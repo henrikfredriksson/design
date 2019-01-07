@@ -1,0 +1,313 @@
+/*!
+* LESS version of the stylesheet for design kmom06.
+*
+* This stylesheet is for the design course and kmom03. Its intention is to
+* use kmom0.css and lessify the style and use this as a wrapper for the new
+* style.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import "kmom04.less";
+@import "./@desinax/typographic-grid/less/typography-font-families.less";
+@import "./@desinax/typographic-grid/less/typography-defaults.less";
+
+@mainBackground: black;
+@bgColorBody: #e3e3e3;
+@bgColorHTML: yellow;
+@colorBody: #859597;
+@navbarLink: #e3e3e3;
+@navbarLinkSize: 20px;
+@hColor: rgb(37, 37, 37);
+@link: rgb(21, 104, 228);
+
+@fontSizeBody: 20px;
+
+
+@fontLogo:            "Barrio", @fontFamilyHelveticaNeue;
+@fontFamilyHeadings:  "Roboto", @fontFamilyHelveticaNeue;
+@fontFamilyBody:      @fontFamilyHelveticaNeue;
+@fontFamilyCode:      @fontFamilyCourier;
+
+html {
+    background-color: @mainBackground;
+}
+
+h2 {
+    font-size: @fontSizeH2;
+}
+
+h3 {
+    font-size: @fontSizeH3;
+}
+
+
+.outer-wrap-main {
+    background-color: #e3e3e3;
+}
+
+.outer-wrap-footer,
+.outer-wrap-header {
+    background-color: black;
+}
+
+.outer-wrap-main {
+    background-image: url("../img/main-background2.jpg");
+    background-size: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+
+        padding: 1em;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    .region-sidebar-right,
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-right.has-sidebar-left,
+    .region-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-flash {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+
+
+.rm-default li a {
+    font-size: @navbarLinkSize;
+    color: @navbarLink;
+}
+
+
+
+.region-flash img {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: @hColor;
+}
+
+
+h1 {
+    font-size: @fontSizeH1;
+}
+
+h2 {
+    font-size: @fontSizeH2;
+}
+
+h3 {
+    font-size: @fontSizeH3;
+}
+
+h3 {
+    font-size: @fontSizeH4;
+}
+
+.rm-default li a:hover {
+    //font-size: @fontFamilyBody;
+    font-size: @navbarLinkSize;
+    color: @link;
+}
+
+
+
+a,
+a:visited {
+    color: @link;
+    text-decoration: none;
+}
+
+
+.region-footer {
+    color: @bgColorBody;
+}
+
+.region-footer a,
+.region-footer a:visited {
+    color: @link;
+    text-decoration: none;
+}
+
+.region-footer code {
+    background-color: #333;
+}
+
+.inner-wrap-flash {
+    background-color: @bgColorBody;
+}
+
+
+.region-flash img {
+    max-width: 100%;
+}
+
+.flashmessage {
+    color: white;
+}
+
+.site-logo-text a {
+    display: inline;
+    font-family: @fontLogo;
+    color: #ff9d41;
+    font-weight: bold;
+}
+
+.rm-mobile a,
+.rm-mobile a:visited {
+    color: #eee;
+    text-decoration: none;
+}
+
+.rm-show-submenu li a,
+.rm-show-submenu li a:visited {
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+}
+
+
+// .breadbrumb-list ul,
+// .toc ul {
+//     display: inline-block;
+// }
+
+.inner-wrap-main .block {
+    background-color: white;
+    font-size: @fontSizeBody;
+}
+
+.site-logo-text {
+    font-size: @fontSizeH1;
+}
+
+// .rm-desktop ul {
+//     border: #e3e3e3 1px solid;
+//     color: #e3e3e3;
+//     background: black;
+// }
+
+@import "./@desinax/figure/less/asciinema.less";
+@import "./@desinax/figure/less/codepen.less";
+@import "./@desinax/figure/less/figure.less";
+
+figure.figure {
+    @maxContentWidth: 960px;
+
+    #desinax-figure.figure(@maxContentWidth);
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+
+
+&.left,
+&.right {
+    @media screen {
+        @media (max-width: round(@columns * 2 / 3)) {
+            &.w50 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+
+                img {
+                    width: @columns * 1 / 2;
+                }
+            }
+
+            &.w25 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+
+                img {
+                    width: @columns * 1 / 4;
+                }
+            }
+
+            &.w67 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+
+                img {
+                    width: @columns * 2/3;
+                }
+            }
+        }
+    }
+}
+
+
+.region-header,
+.region-flash,
+.inner-wrap-header .row,
+.inner-wrap-flash .row {
+    margin: 0;
+    width: 100%;
+}
+
+
+.rm-default li ul {
+    background-color: @mainBackground;
+}
+
+.my-navbar li a {
+    font-family: "Roboto";
+    font-size: @navbarLinkSize;
+}
+
+.my-navbar li a:hover {
+    font-family: "Roboto";
+    font-size: @navbarLink;
+}
+
+// .footer-column {
+//     background-color: rgba(@bgColorBody, 0.6);
+// }
+
+
+.site-footer p,
+.footer-column p {
+    color: @bgColorBody;
+}
+
+.region-footer h4 {
+    color: #e3e3e3;
+}
+
+.inner-wrap-main {
+    width: 70%;
+    background-color: rgba(245, 245, 245, 0.8);
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+
